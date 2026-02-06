@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Chocolate Day ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to right, #3e2723, #5d4037);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #4e342e;
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #d7a86e;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f0c27b;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 30px;
+      font-weight: bold;
+      color: #ffccbc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Happy Chocolate Day 🍫</h1>
+
+    <p>
+      Just like chocolate, you make everything sweeter just by being you.
+            This is a small surprise.
+             I LOVE YOU ❤️ 
+    </p>
+
+    <button onclick="showMessage()">Click for a surprise</button>
+
+    <div id="surprise" class="hidden">
+      You are my favorite treat — today and always ❤️
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
